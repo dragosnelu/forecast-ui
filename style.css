@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;  
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
+
+.btn.invalid {
+    background-color: red;
+    color: white;
+}
+
+
+.btn.valid {
+    background-color: green;
+    color: white;
+}
+
+#formulas {
+    display: flex;
+}
+
+.input-style {
+    content: "\a";
+    white-space: pre;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.data-wrapper {
+    display: flex;
+}
+
+.coeficient {
+    margin-left: 20px;
+    display: none;
+}
+
+.coeficient input {
+   width: 25px;
+   display: block;
+}
+
+.results {
+    display: none;
+    margin-left: 20px;
+}
+
+.results div {
+    margin: 0 15px;
+}

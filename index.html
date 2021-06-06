@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
-    Test push
-
+    <div class="title">Titlu aici</div>
+    <div class="button-list">
+        <div onclick="submitValues()" class="btn">Submit</div>
+        <div class="btn">Reset</div>
+        <div id="formulas">
+            <div onclick="toggleBtnValidity(event)" id="mas" class="btn">MAS</div>
+            <div onclick="toggleBtnValidity(event)" id="maw" class="btn">MAW</div>
+            <div id="lt" class="btn">Formula 3</div>
+            <div id="es" class="btn">Formula 4</div>
+            <div id="des" class="btn">Formula 5</div>
+            <div id="tot" class="btn">Formula 6</div>
+        </div>
+    </div>
+    <div class="data-wrapper">
+        <div class="inputs">
+            <div>Titlu 2</div>
+            <div class="inputList">
+                <input type="number" id="0" onchange="inputProcessAction(event)" value="0" class="input-style">
+            </div>
+        </div>
+        <div class="coeficient">
+            N value:
+            <input type="number" id="nMass" oninput="addCoeficientNr(event)">
+        </div>
+        <div class="results">
+            <div>
+               <div>Initial values</div>
+               <div class="initial-values"></div>
+               
+            </div>
+            <div>
+                <div class="formula-result"></div>
+            </div>
+            <div>
+                TS
+            </div>
+        </div>
+    </div>
 </body>
 </html>
